@@ -1,0 +1,17 @@
+    body{
+  background-image: url("img/ig.jpg"); /* path ঠিক করো */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* dark overlay */
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.4);
+  z-index:-1;
+}
